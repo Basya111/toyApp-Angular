@@ -1,0 +1,16 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title">Thank you for buying in Toykie!</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h5>Your Toy are on the way to you!</h5>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>
+  
+  <button class="cta-btn" (click)="openVerticallyCentered(content)">buy</button>

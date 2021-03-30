@@ -1,0 +1,39 @@
+.toy-edit{
+
+    background-image: url('../../../assets/img/toys1.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+
+    h3{
+        width: 80px;
+        margin: 10px auto;
+    }
+
+}
+.simple-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 25px auto 50px;
+  
+    & > * {
+      margin-block-end: 15px;
+    }
+  
+    input:not([type="checkbox"]) {
+      padding: 5px 8px;
+      width: 100%;
+    }
+  
+    .form-errors {
+      text-align: center;
+      margin-top: 24px;
+      color: red;
+      font-size: 15px;
+    }
+
+    textarea{
+        width: 313px;
+        height: 100px;
+    }
+  }

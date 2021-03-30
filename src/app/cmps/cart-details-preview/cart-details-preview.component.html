@@ -1,0 +1,9 @@
+<div class="cart-toy-preview" >
+    <img [src]="toy.img" alt="" [routerLink]="['/toy',toy.id]">
+    <div>
+        <h4>{{toy.name}}</h4>
+        <p>{{toy.price | currency}}</p>
+        <p>{{toy.description | shortTxt}}</p>
+    </div>
+    <button (click)="onRemoveToy.emit(toy.id)">✕</button>
+</div>

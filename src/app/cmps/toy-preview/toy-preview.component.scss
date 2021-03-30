@@ -1,0 +1,46 @@
+.toy-preview{
+    width: 235px;
+    height: 220px;
+    box-shadow: 0px 2px 3px 1px #c5c5c5;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.5s;
+    outline: none;
+
+    &:hover{
+        box-shadow: 0px 2px 5px 3px #c5c5c5;
+        transition: box-shadow 0.5s;
+    }
+
+    img{
+        width: 150px;
+    }
+
+    h4{
+        font-size: 18px;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    .heart-preview{
+        position: absolute;
+        width: 25px;
+        top: 5px;
+        right: 16px;
+        // transition: transform 0.4s;
+
+        // &:hover{
+        //     transform: scale(1.05);
+        //     transition: transform 0.4s;
+        // }
+    }
+}

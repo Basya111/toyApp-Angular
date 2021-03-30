@@ -1,0 +1,17 @@
+<section class="reviews-container">
+    <ul>
+        <li *ngFor="let review of reviews">
+            <div class="review-preview">
+                <div class="review-top">
+                  <p>Name: {{review.name}}</p>
+                  <toy-rate [currentRate]="review.rate"></toy-rate>  
+                </div>
+                <div class="review-buttom">
+                    <p>"{{review.txt}}"</p>
+                    <p class="date">{{review.date | date: 'mediumDate'}}</p>
+                </div>
+            </div>
+        </li>
+        <hr>
+    </ul>
+</section>

@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+}
+
+html{
+    font-family: system-ui;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+
+    text-decoration: none;
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cta-btn {background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)}
+.cta-btn {
+   padding: 5px 25px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   outline: none;
+   border: none;
+ }
+
+ .cta-btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+
+.cta2-btn {
+    padding: 2px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #ea4e6a;
+    border-radius: 10px;
+    display: block;
+    outline: none;
+    border: #ea4e6a 2px solid;
+    background: white;
+ }
+
+ .cta2-btn:hover {
+    background-position: right center;
+    background-color: #ff7f97;
+    color: white;
+    text-decoration: none;
+    border: #ff7f97 2px solid;
+}
+
+
+

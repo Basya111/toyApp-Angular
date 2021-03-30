@@ -1,0 +1,82 @@
+.toy-details-box{
+    padding: 5px 15px;
+    .toy-details{
+        max-width: 900px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+    align-items: center;
+    
+    img{
+        max-width: 340px;
+        object-fit: contain;
+    }
+    
+    .toy-desc{
+        margin-left: 15px;
+        
+        p{
+            margin-bottom: 8px;
+        }
+    }
+    
+    .back-btn{
+        position: absolute;
+        outline: none;
+        border: none;
+        padding: 3px 9px;
+        background-color: #ff5d83;
+        color: white;
+        border-radius: 4px;
+        top: 66px;
+        left: 28px;
+
+        &:hover{
+            background-color: rgb(240, 108, 123); 
+        }
+    }
+    
+    .edit-btn{
+        outline: none;
+        border: none;
+        padding: 3px 9px;
+        background-color: #ff5d83;
+        color: white;
+        border-radius: 4px;
+        &:hover{
+            background-color: rgb(240, 108, 123); 
+        }
+    }
+    
+    .heart{
+        width: 35px;
+        margin:0 10px;
+        cursor: pointer;
+    }
+    
+    .btns{
+        display: flex;
+        margin-bottom: 8px;
+    }
+    
+}
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000000de;
+    text-align: center;
+    width: 100vw;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.add-review-box{
+    z-index: 20;
+    position: absolute;
+    top: 14%;
+    right: 35%;
+}
+}

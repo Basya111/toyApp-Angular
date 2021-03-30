@@ -1,0 +1,11 @@
+<div class="singup-container">
+    <h3>Welcome to <span>Toykei</span></h3>
+    <p>We are glad that you desided to join us!</p>
+    <form (ngSubmit)="signupUser()" class="simple-form">
+        <input type="text" [(ngModel)]="user.username" name="username" placeholder="Username">
+        <button class="cta-btn signup-btn">Signup</button>
+    </form>
+    <div>
+        <img src="../../../assets/img/train.png" alt="">
+    </div>
+</div>

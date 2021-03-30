@@ -1,0 +1,15 @@
+<div class="toy-preview" [routerLink]="['/toy',toy.id]">
+    <img [src]="toy.img" alt="">
+    <h4>{{toy.name}}</h4>
+    <p>price: {{toy.price | currency}}</p>
+    <img
+    *ngIf="!isInWishList"
+    placement="top" ngbTooltip="Add to wish list"
+    (click)="addToWishList($event)"
+    class="heart-preview" src="https://res.cloudinary.com/basimgs/image/upload/v1612376637/heart_ujzqqz.png" alt="">
+    <img class="heart-preview" *ngIf="isInWishList"
+    ngbTooltip="Remove from wish list"
+    (click)="removeFromWishList($event)"
+    src="https://res.cloudinary.com/basimgs/image/upload/v1612376637/heart_1_odahts.png" alt="">
+</div>
+<app-toasts aria-live="polite" aria-atomic="true"></app-toasts>

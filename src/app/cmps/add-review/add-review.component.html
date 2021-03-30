@@ -1,0 +1,6 @@
+<form class="simple-form" (submit)="onAddReview()">
+    <input type="text" [(ngModel)]="review.name" name="name" placeholder="name">
+    <label for="">Rate: <input type="range"  name="rate" [(ngModel)]="review.rate" min="0" max="5"></label>
+    <textarea [(ngModel)]="review.txt" name="txt" placeholder="What did you think..."></textarea>
+    <button class="cta-btn">Add</button>
+</form>
