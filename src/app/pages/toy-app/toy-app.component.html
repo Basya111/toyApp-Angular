@@ -1,8 +1,0 @@
-<div class="toy-app">
-    <toy-filter (onSetFilter)="onSetFilter($event)" [filterBy$]="filterBy$" ></toy-filter>
-    <button class="cta-btn" [routerLink]="['/toy/edit']" >Add new toy</button>
-    <toy-list [toys]="toys$" *ngIf="!isLoading" (onAddToWishList)="onAddToWishList($event)" 
-    (onRemoveFromWishList)="onRemoveFromWishList($event)"
-    [user]="loggedInUser$ | async"></toy-list>
-    <div class="loader"><img  src="../../../assets/img/loader.gif" *ngIf="isLoading" alt=""></div>
-</div>

@@ -1,6 +1,0 @@
-<section class="toy-list">
-    <toy-preview *ngFor="let toy of toys | async" [toy]="toy" 
-    (onAddToWishList)="onAddToWishList.emit($event)" [user]="user"
-    (onRemoveFromWishList)="onRemoveFromWishList.emit($event)"
-    ></toy-preview>
-</section>
